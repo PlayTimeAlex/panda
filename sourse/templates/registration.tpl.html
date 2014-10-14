@@ -1,0 +1,39 @@
+@@include('blocks/_b-header.html')
+@@include('blocks/_b-sidebar_unlogin.html')
+<div class="container maximized">
+    <div class="b-page">
+        <div class="row">
+            <div class="span4 offset2">
+                <div class="b-login">
+                    <h2 class="b-login__title">Регистрация</h2>
+                    <form action="/">
+                        <div class="b-login__el">
+                            <input class="b-login__text error" type="text" placeholder="Логин"/>
+                            <span class="b-login__message">Такой логин уже используеться</span>
+                        </div>
+                        <div class="b-login__el">
+                            <input class="b-login__text" type="email" placeholder="Адрес вашей почты"/>
+                        </div>
+                        <div class="b-login__el">
+                            <input class="b-login__text" type="password" placeholder="Пароль"/>
+                        </div>
+                        <div class="b-login__el align-right">
+                            <button class="b-login__submit" type="submit">Зарегистрироваться</button>
+                        </div>
+                    </form>
+                    <div class="b-login__social">
+                        <div class="title">или войти через соц. сеть</div>
+                        <ul class="b-login__social-list">
+                            <li><a class="b-login__social-icon icon15" href="#" title="Вконтакте"></a></li>
+                            <li><a class="b-login__social-icon icon16" href="#" title="Facebook"></a></li>
+                            <li><a class="b-login__social-icon icon17" href="#" title="Однокласники"></a></li>
+                            <li><a class="b-login__social-icon icon18" href="#" title="Google plus"></a></li>
+                            <li><a class="b-login__social-icon icon19" href="#" title="Mail.ru"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

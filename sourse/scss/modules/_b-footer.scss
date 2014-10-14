@@ -1,0 +1,16 @@
+.b-footer{
+    padding: em(45) 0 em(20);
+    position: relative;
+    margin-top: - em(120);
+    &__content{
+        $font-size: 12;
+        font-size: em($font-size);
+        color: $color_4;
+    }
+    &__created{
+        text-align: right;
+    }
+    &__mobile{
+        padding: 5px 0 0;
+    }
+}

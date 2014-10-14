@@ -1,0 +1,21 @@
+.b-settings{
+    position: relative;
+    &__login{
+        color: $color_7;
+        $font-size: 15;
+        font-size: em($font-size);
+        display: inline-block;
+        padding: em(2, $font-size) em(10, $font-size);
+
+    }
+    &__avatar{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        border-radius:50%;
+    }
+    .b-form__label{
+        text-align: right;
+    }
+}

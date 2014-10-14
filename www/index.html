@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <meta charset="UTF-8">
+    <!-- Если у поста нет илюстрции то должна быть данная картинка. Если страница поста и есть илюстрация то использовать ее.
+    В противном случае картинку по умолчанию-->
+    <meta property="og:image" content="http://p125.createme.tk/images/ipc.png" />
+    <!-- Заголовок сайта который придумают позже. На страницах поста долже быть заголовок текущего поста -->
+    <meta property="og:title" content="Китайская панда" />
+    <!-- Описание поста. на остальных страницах описание сайта. -->
+    <meta property="og:description" content="Результат теста: Дракон почти Ваш «конек»! Вы пока не можете преподавать Драконоведение, но на верном пути!" />
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css" media="all"/>
+    <script src="js/01_jquery-2.0.3.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <!--[if lte IE 8 ]><script type="text/javascript">window.location.href="ie8min/index.html";</script><![endif]-->
+</head>
+    <body>
+        <div class="wrap">
+            <header class="b-header">
+                <div class="b-header__top">
+                    <button class="b-header__osidebar js-sidebar-control icon3 close" title="Показать сайдбар"></button>
+                    <a class="b-header__logo" href="index.html" title="На главную"><img src="images/panda-logo.svg" alt="IPanda"/></a>
+                    <div class="b-header__middle">
+                        <div class="row">
+                            <div class="span4">
+                                <div class="b-header__search">
+                                    <form action="/">
+                                        <input class="field" type="text" placeholder="Поиск"/>
+                                        <button class="submit icon1" type="submit" title="Искать"></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <div class="b-header__social">
+                                    <a class="icon icon26" href="#"></a>
+                                    <a class="icon icon27" href="#"></a>
+                                    <a class="icon icon28" href="#"></a>
+                                    <a class="icon icon29" href="#"></a>
+                                    <a class="icon icon30" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-header__right">
+                        <!-- Это для зарегистрированых пользователей-->
+                        <!-- Кнопку наверно нужно скрывать на странице поста -->
+                        <a class="b-header__addpost anim-scroll" href="my_posts.html#new">создать пост</a>
+                        <a class="b-header__notice icon2" href="notice.html">Уведомления<sup>99+</sup></a>
+                        <!-- конец области для зарегистрированых пользователей-->
+                        <!-- это для гостей-->
+                        <!--<a class="b-header__notice icon14" href="notice.html">Войти</a>-->
+                        <!-- конец области для гостей-->
+                    </div>
+                </div>
+                <div class="b-header__bottom">
+                    <div class="container maximized">
+                        <div class="b-sort">
+                            <a class="b-sort__item current" href="index.html">Главная</a>
+                            <a class="b-sort__item" href="index.html">Лучшие</a>
+                            <a class="b-sort__item" href="index.html">Обсуждаемые</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+<aside class="b-sidebar close">
+    <div class="b-sidebar__content">
+        <div class="b-sidebar__item">
+            <a class="b-sidebar__avatar" href="my_posts.html#new"><img src="images/content/avatar.jpg" alt="Сергеенко Андрей" /><span class="text">Сергеенко Андрей</span></a>
+        </div>
+        <div class="b-sidebar__item">
+            <ul class="b-sidebar__menu">
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon5 anim-scroll" href="my_posts.html#new">Создать пост</a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l current icon6 anim-scroll" href="my_posts.html#myposts">Мои посты</a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon7" href="settings.html">Настройки</a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon8" href="favorite.html">Избранное<sup>99+</sup></a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon2" href="notice.html">Уведомления<sup>99+</sup></a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon9" href="login.html">Выйти</a></li>
+            </ul>
+        </div>
+        <div class="b-sidebar__item">
+            <ul class="b-sidebar__menu">
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon13" href="user_raiting.html">Рейтинг пользователей</a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon10" href="faq.html">FAQ</a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon32" href="#">Моб. версия</a></li>
+                <!-- можно и делать ссылкой свернуть если будут проблемы при програмировании. Просто свернуть это по смылу никакая не ссылка и никуда не ведет.-->
+                <li class="b-sidebar__menu-i"><span class="b-sidebar__menu-l icon11 js-minimize-sidebar">Свернуть</span></li>
+            </ul>
+        </div>
+    </div>
+    <button class="pr-scroll-top icon12"></button>
+</aside>
+<div class="container maximized">
+    <div class="b-page">
+        <article class="b-post">
+            <h2 class="b-post__title"><a href="post.html">Пост добра на iPanda.Club</a><button class="b-post__copylink pr-copy pr-tooltip" data-clipboard-text="http://post.link/1/" title="Скопировать ссылку на пост"></button></h2>
+            <div class="b-post__detalis">
+    <span class="b-post__detalis-i b-post__author icon20"><a href="my_posts.html">Сергеенко Андрей</a></span>
+    <span class="b-post__detalis-i icon23">275,23</span>
+    <time class="b-post__detalis-i icon4">2014-09-09</time>
+    <span class="b-post__detalis-i icon22 anim-scroll">21 <a href="post.html#comments">комментарий</a></span>
+</div>
+            <div class="b-post__content b-text">
+                <div class="b-post__image">
+                    <img src="images/content/img1.jpg" alt="alt"/>
+                    <p class="description">Эта 99-летняя бабушка каждый день шьет платья для нуждающихся детей </p>
+                </div>
+            </div>
+            <div class="b-post__bottom">
+    <span class="b-post__detalis-i icon22">21 <a href="post.html#comments">комментарий</a></span>
+    <span class="b-post__detalis-i icon21 b-post__detalis-i_favorite"><a href="#">В избранное</a></span>
+    <span class="b-post__detalis-i b-post__detalis-i_share">Поделиться
+        <button class="b-social__icon icon15 pr-tooltip" title="Поделиться Вконтакте" onclick="Share.vkontakte('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon16 pr-tooltip" title="Поделиться Facebook" onclick="Share.facebook('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon17 pr-tooltip" title="Поделиться Однокласники" onclick="Share.odnoklassniki('http://p125.createme.tk/post.html','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon18 pr-tooltip" title="Поделиться Google+" onclick="Share.gplus('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon19 pr-tooltip" title="Поделиться Mail.ru" onclick="Share.mailru('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+    </span>
+    <div class="b-post__rating">
+        <span class="add icon24 pr-tooltip" title="Понравилось"></span>9,99<span class="remove icon25 pr-tooltip" title="Не понравилось"></span>
+    </div>
+</div>
+        </article>
+        <article class="b-post">
+            <h2 class="b-post__title"><a href="post.html">Заголовок поста ссылкой</a><button class="b-post__copylink pr-copy pr-tooltip" data-clipboard-text="http://post.link/2/" title="Скопировать ссылку на пост"></button></h2>
+            <div class="b-post__detalis">
+    <span class="b-post__detalis-i b-post__author icon20"><a href="my_posts.html">Сергеенко Андрей</a></span>
+    <span class="b-post__detalis-i icon23">275,23</span>
+    <time class="b-post__detalis-i icon4">2014-09-09</time>
+    <span class="b-post__detalis-i icon22 anim-scroll">21 <a href="post.html#comments">комментарий</a></span>
+</div>
+            <div class="b-post__content b-text">
+                <p>Первая производная накладывает экстремум функции. Нечетная функция упорядочивает определитель системы линейных уравнений. Векторное поле обуславливает невероятный степенной ряд.</p>
+                <p>Стоит отметить, что функция многих переменных определяет коллинеарный предел функции. Абсолютная погрешность, как следует из вышесказанного, программирует убывающий сходящийся ряд, что известно даже школьникам. Наряду с этим, комплексное число проецирует неопровержимый вектор. Бином Ньютона независим. Достаточное условие сходимости продуцирует ротор векторного поля. Поэтому математический анализ позитивно оправдывает неопределенный интеграл.</p>
+            </div>
+            <div class="b-post__bottom">
+    <span class="b-post__detalis-i icon22">21 <a href="post.html#comments">комментарий</a></span>
+    <span class="b-post__detalis-i icon21 b-post__detalis-i_favorite"><a href="#">В избранное</a></span>
+    <span class="b-post__detalis-i b-post__detalis-i_share">Поделиться
+        <button class="b-social__icon icon15 pr-tooltip" title="Поделиться Вконтакте" onclick="Share.vkontakte('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon16 pr-tooltip" title="Поделиться Facebook" onclick="Share.facebook('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon17 pr-tooltip" title="Поделиться Однокласники" onclick="Share.odnoklassniki('http://p125.createme.tk/post.html','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon18 pr-tooltip" title="Поделиться Google+" onclick="Share.gplus('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon19 pr-tooltip" title="Поделиться Mail.ru" onclick="Share.mailru('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+    </span>
+    <div class="b-post__rating">
+        <span class="add icon24 pr-tooltip" title="Понравилось"></span>9,99<span class="remove icon25 pr-tooltip" title="Не понравилось"></span>
+    </div>
+</div>
+        </article>
+        <article class="b-post">
+            <h2 class="b-post__title"><a href="post.html">Заголовок поста ссылкой</a><button class="b-post__copylink pr-copy pr-tooltip" data-clipboard-text="http://post.link/" title="Скопировать ссылку на пост"></button></h2>
+            <div class="b-post__detalis">
+    <span class="b-post__detalis-i b-post__author icon20"><a href="my_posts.html">Сергеенко Андрей</a></span>
+    <span class="b-post__detalis-i icon23">275,23</span>
+    <time class="b-post__detalis-i icon4">2014-09-09</time>
+    <span class="b-post__detalis-i icon22 anim-scroll">21 <a href="post.html#comments">комментарий</a></span>
+</div>
+            <div class="b-post__content b-text">
+                <p>Первая производная накладывает экстремум функции. Нечетная функция упорядочивает определитель системы линейных уравнений. Векторное поле обуславливает невероятный степенной ряд.</p>
+                <p>Стоит отметить, что функция многих переменных определяет коллинеарный предел функции. Абсолютная погрешность, как следует из вышесказанного, программирует убывающий сходящийся ряд, что известно даже школьникам. Наряду с этим, комплексное число проецирует неопровержимый вектор. Бином Ньютона независим. Достаточное условие сходимости продуцирует ротор векторного поля. Поэтому математический анализ позитивно оправдывает неопределенный интеграл.</p>
+                <!--cut-->
+                <div class="b-post__cut">
+                    <p>Первая производная накладывает экстремум функции. Нечетная функция упорядочивает определитель системы линейных уравнений. Векторное поле обуславливает невероятный степенной ряд.</p>
+                    <p>Стоит отметить, что функция многих переменных определяет коллинеарный предел функции. Абсолютная погрешность, как следует из вышесказанного, программирует убывающий сходящийся ряд, что известно даже школьникам. Наряду с этим, комплексное число проецирует неопровержимый вектор. Бином Ньютона независим. Достаточное условие сходимости продуцирует ротор векторного поля. Поэтому математический анализ позитивно оправдывает неопределенный интеграл.</p>
+                    <p>Первая производная накладывает экстремум функции. Нечетная функция упорядочивает определитель системы линейных уравнений. Векторное поле обуславливает невероятный степенной ряд.</p>
+                    <p>Стоит отметить, что функция многих переменных определяет коллинеарный предел функции. Абсолютная погрешность, как следует из вышесказанного, программирует убывающий сходящийся ряд, что известно даже школьникам. Наряду с этим, комплексное число проецирует неопровержимый вектор. Бином Ньютона независим. Достаточное условие сходимости продуцирует ротор векторного поля. Поэтому математический анализ позитивно оправдывает неопределенный интеграл.</p>
+                </div>
+                <button class="b-post__expand">показать все</button>
+            </div>
+            <div class="b-post__bottom">
+    <span class="b-post__detalis-i icon22">21 <a href="post.html#comments">комментарий</a></span>
+    <span class="b-post__detalis-i icon21 b-post__detalis-i_favorite"><a href="#">В избранное</a></span>
+    <span class="b-post__detalis-i b-post__detalis-i_share">Поделиться
+        <button class="b-social__icon icon15 pr-tooltip" title="Поделиться Вконтакте" onclick="Share.vkontakte('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon16 pr-tooltip" title="Поделиться Facebook" onclick="Share.facebook('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon17 pr-tooltip" title="Поделиться Однокласники" onclick="Share.odnoklassniki('http://p125.createme.tk/post.html','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon18 pr-tooltip" title="Поделиться Google+" onclick="Share.gplus('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon19 pr-tooltip" title="Поделиться Mail.ru" onclick="Share.mailru('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+    </span>
+    <div class="b-post__rating">
+        <span class="add icon24 pr-tooltip" title="Понравилось"></span>9,99<span class="remove icon25 pr-tooltip" title="Не понравилось"></span>
+    </div>
+</div>
+        </article>
+        <article class="b-post">
+            <h2 class="b-post__title"><a href="post.html">Заголовок поста ссылкой</a><button class="b-post__copylink pr-copy pr-tooltip" data-clipboard-text="http://post.link/" title="Скопировать ссылку на пост"></button></h2>
+            <div class="b-post__detalis">
+    <span class="b-post__detalis-i b-post__author icon20"><a href="my_posts.html">Сергеенко Андрей</a></span>
+    <span class="b-post__detalis-i icon23">275,23</span>
+    <time class="b-post__detalis-i icon4">2014-09-09</time>
+    <span class="b-post__detalis-i icon22 anim-scroll">21 <a href="post.html#comments">комментарий</a></span>
+</div>
+            <div class="b-post__content b-text">
+                <div class="b-post__image">
+                    <img src="images/content/countryballs.png" alt="alt"/>
+                    <span class="original"><a href="http://joyreactor.cc/post/1592918">joyreactor</a></span>
+                </div>
+            </div>
+            <div class="b-post__bottom">
+    <span class="b-post__detalis-i icon22">21 <a href="post.html#comments">комментарий</a></span>
+    <span class="b-post__detalis-i icon21 b-post__detalis-i_favorite"><a href="#">В избранное</a></span>
+    <span class="b-post__detalis-i b-post__detalis-i_share">Поделиться
+        <button class="b-social__icon icon15 pr-tooltip" title="Поделиться Вконтакте" onclick="Share.vkontakte('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon16 pr-tooltip" title="Поделиться Facebook" onclick="Share.facebook('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon17 pr-tooltip" title="Поделиться Однокласники" onclick="Share.odnoklassniki('http://p125.createme.tk/post.html','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon18 pr-tooltip" title="Поделиться Google+" onclick="Share.gplus('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon19 pr-tooltip" title="Поделиться Mail.ru" onclick="Share.mailru('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+    </span>
+    <div class="b-post__rating">
+        <span class="add icon24 pr-tooltip" title="Понравилось"></span>9,99<span class="remove icon25 pr-tooltip" title="Не понравилось"></span>
+    </div>
+</div>
+        </article>
+        <article class="b-post">
+            <h2 class="b-post__title"><a href="post.html">Пост добра на iPanda.Club</a><button class="b-post__copylink pr-copy pr-tooltip" data-clipboard-text="http://post.link/1/" title="Скопировать ссылку на пост"></button></h2>
+            <div class="b-post__detalis">
+    <span class="b-post__detalis-i b-post__author icon20"><a href="my_posts.html">Сергеенко Андрей</a></span>
+    <span class="b-post__detalis-i icon23">275,23</span>
+    <time class="b-post__detalis-i icon4">2014-09-09</time>
+    <span class="b-post__detalis-i icon22 anim-scroll">21 <a href="post.html#comments">комментарий</a></span>
+</div>
+            <div class="b-post__content b-text">
+                <div class="b-post__image">
+                    <div class="b-post__gif preload">
+                        <img src="images/content/gif.jpg" data-img="images/content/gif.gif" alt="alt"/>
+                    </div>
+                    <p class="description">Эта 99-летняя бабушка каждый день шьет платья для нуждающихся детей </p>
+                </div>
+            </div>
+            <div class="b-post__bottom">
+    <span class="b-post__detalis-i icon22">21 <a href="post.html#comments">комментарий</a></span>
+    <span class="b-post__detalis-i icon21 b-post__detalis-i_favorite"><a href="#">В избранное</a></span>
+    <span class="b-post__detalis-i b-post__detalis-i_share">Поделиться
+        <button class="b-social__icon icon15 pr-tooltip" title="Поделиться Вконтакте" onclick="Share.vkontakte('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon16 pr-tooltip" title="Поделиться Facebook" onclick="Share.facebook('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon17 pr-tooltip" title="Поделиться Однокласники" onclick="Share.odnoklassniki('http://p125.createme.tk/post.html','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon18 pr-tooltip" title="Поделиться Google+" onclick="Share.gplus('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon19 pr-tooltip" title="Поделиться Mail.ru" onclick="Share.mailru('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+    </span>
+    <div class="b-post__rating">
+        <span class="add icon24 pr-tooltip" title="Понравилось"></span>9,99<span class="remove icon25 pr-tooltip" title="Не понравилось"></span>
+    </div>
+</div>
+        </article>
+        <article class="b-post">
+            <h2 class="b-post__title"><a href="post.html">Пост добра на iPanda.Club</a><button class="b-post__copylink pr-copy pr-tooltip" data-clipboard-text="http://post.link/1/" title="Скопировать ссылку на пост"></button></h2>
+            <div class="b-post__detalis">
+    <span class="b-post__detalis-i b-post__author icon20"><a href="my_posts.html">Сергеенко Андрей</a></span>
+    <span class="b-post__detalis-i icon23">275,23</span>
+    <time class="b-post__detalis-i icon4">2014-09-09</time>
+    <span class="b-post__detalis-i icon22 anim-scroll">21 <a href="post.html#comments">комментарий</a></span>
+</div>
+            <div class="b-post__content b-text">
+                <div class="b-post__image">
+                    <div class="pr-video">
+                        <!-- поддерживает только ифреймы 16:9-->
+                        <iframe width="560" height="315" src="//www.youtube.com/embed/X_sV2M4qhz4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <p class="description">Эта 99-летняя бабушка каждый день шьет платья для нуждающихся детей </p>
+                </div>
+            </div>
+            <div class="b-post__bottom">
+    <span class="b-post__detalis-i icon22">21 <a href="post.html#comments">комментарий</a></span>
+    <span class="b-post__detalis-i icon21 b-post__detalis-i_favorite"><a href="#">В избранное</a></span>
+    <span class="b-post__detalis-i b-post__detalis-i_share">Поделиться
+        <button class="b-social__icon icon15 pr-tooltip" title="Поделиться Вконтакте" onclick="Share.vkontakte('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon16 pr-tooltip" title="Поделиться Facebook" onclick="Share.facebook('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon17 pr-tooltip" title="Поделиться Однокласники" onclick="Share.odnoklassniki('http://p125.createme.tk/post.html','Самая крутая панда в мире.')"></button>
+        <button class="b-social__icon icon18 pr-tooltip" title="Поделиться Google+" onclick="Share.gplus('http://p125.createme.tk/post.html')"></button>
+        <button class="b-social__icon icon19 pr-tooltip" title="Поделиться Mail.ru" onclick="Share.mailru('http://p125.createme.tk/post.html','Китайская панда','http://p125.createme.tk/images/ipc.png','Самая крутая панда в мире.')"></button>
+    </span>
+    <div class="b-post__rating">
+        <span class="add icon24 pr-tooltip" title="Понравилось"></span>9,99<span class="remove icon25 pr-tooltip" title="Не понравилось"></span>
+    </div>
+</div>
+        </article>
+        <div class="post-preloader">
+            <img src="images/loader.gif" alt="preloader" width="47" height="47"/>
+        </div>
+    </div>
+</div>
+        </div>
+        <footer class="b-footer">
+            <div class="container maximized">
+                <div class="b-footer__content">
+                    <div class="row">
+                        <div class="span4">
+                            <p class="b-footer__copyright">&copy; 2014 All Rights Reserved. iPanda.Club</p>
+                        </div>
+                        <div class="span4">
+                            <div class="b-footer__created">Сайт разрабатывается в <a target="_blank" href="//mymediapro.ru" title="Создание сайтов">Mymediapro.ru</a></div>
+                        </div>
+                    </div>
+                    <div class="b-footer__mobile"><a href="//m.ipanda.ru">Мобильная версия</a></div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

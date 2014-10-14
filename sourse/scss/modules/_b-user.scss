@@ -1,0 +1,25 @@
+.b-user{
+    font-size: $base__font-size*1px;
+    font-weight: normal;
+    &__avatar{
+        border-radius:50%;
+        float: left;
+    }
+    &__content{
+        overflow: hidden;
+        padding: 0 0 0 em(23);
+    }
+    &__name{
+        $font-size: 15;
+        font-size: em($font-size);
+        display: block;
+    }
+    &__regdate{
+        $font-size: 11;
+        font-size: em($font-size);
+        display: block;
+        font-style: italic;
+        color: $color_4;
+        padding: em(6, $font-size) 0 0;
+    }
+}

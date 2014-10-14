@@ -1,0 +1,157 @@
+@@include('blocks/_b-header.html')
+@@include('blocks/_b-sidebar.html')
+<div class="container maximized">
+    <div class="b-page" id="new">
+        <h1 class="b-page__title">Личный кабинет</h1>
+        <h2 class="b-page__subtitle">Создать пост</h2>
+        <div class="b-cpost">
+            <form action="/">
+                <div class="b-form__el">
+                    <div class="row">
+                        <div class="span2">
+                            <label class="b-form__label">Заголовок</label>
+                        </div>
+                        <div class="span6">
+                            <input class="b-form__text" type="text"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="b-form__el">
+                    <div class="row">
+                        <div class="span2">
+                            <label class="b-form__label">Описание / текст</label>
+                        </div>
+                    </div>
+                    <div class="b-cpost__editor">
+                        <img src="images/content/editor.jpg" alt="editor" style="width:100%;"/>
+                    </div>
+                </div>
+                <div class="b-cpost__add align-right">
+                    <button class="pr-button" type="submit">Сохранить</button>
+                    <button class="pr-button pr-button_gray" type="submit">Предпросмотр</button>
+                </div>
+            </form>
+        </div>
+        <h2 class="b-page__subtitle">Мои посты</h2>
+        <table class="b-table" id="myposts">
+            <thead>
+            <tr>
+                <th>Название поста / дата</th>
+                <th class="b-table__comment">Комментарии</th>
+                <th class="b-table__rait">Рейтинг</th>
+                <th class="b-table__del">Удалить</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <div class="b-user">
+                        <div class="b-table__pd">
+                            <a  class="b-table__pd-post" href="post.html">Есть ли смысл на Марсе</a>
+                            <span class="b-table__pd-pstat">Опубликовано 2014-09-09</span>
+                        </div>
+                    </div>
+                </td>
+                <td><a href="post.html#comments">211</a></td>
+                <td>275,19</td>
+                <td><a class="b-table__remove icon31" title="Удалить пост" href="#"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="b-user">
+                        <div class="b-table__pd">
+                            <a  class="b-table__pd-post b-table__pd-post_error" href="post.html">Иван Васильевич угорает под метал</a>
+                            <span class="b-table__pd-pstat">Не прошел модерацию — <em>(политический срач)</em></span>
+                        </div>
+                    </div>
+                </td>
+                <td><a href="post.html#comments">0</a></td>
+                <td>275,19</td>
+                <td><a class="b-table__remove icon31" title="Удалить пост" href="#"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="b-user">
+                        <div class="b-table__pd">
+                            <a  class="b-table__pd-post" href="post.html">Есть ли смысл на Марсе</a>
+                            <span class="b-table__pd-pstat">Опубликовано 2014-09-09</span>
+                        </div>
+                    </div>
+                </td>
+                <td><a href="post.html#comments">211</a></td>
+                <td>275,19</td>
+                <td><a class="b-table__remove icon31" title="Удалить пост" href="#"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="b-user">
+                        <div class="b-table__pd">
+                            <a  class="b-table__pd-post" href="post.html">Есть ли смысл на Марсе</a>
+                            <span class="b-table__pd-pstat">Опубликовано 2014-09-09</span>
+                        </div>
+                    </div>
+                </td>
+                <td><a href="post.html#comments">211</a></td>
+                <td>275,19</td>
+                <td><a class="b-table__remove icon31" title="Удалить пост" href="#"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="b-user">
+                        <div class="b-table__pd">
+                            <a  class="b-table__pd-post" href="post.html">Есть ли смысл на Марсе</a>
+                            <span class="b-table__pd-pstat">Опубликовано 2014-09-09</span>
+                        </div>
+                    </div>
+                </td>
+                <td><a href="post.html#comments">211</a></td>
+                <td>275,19</td>
+                <td><a class="b-table__remove icon31" title="Удалить пост" href="#"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="b-user">
+                        <div class="b-table__pd">
+                            <a  class="b-table__pd-post" href="post.html">Есть ли смысл на Марсе</a>
+                            <span class="b-table__pd-pstat">Опубликовано 2014-09-09</span>
+                        </div>
+                    </div>
+                </td>
+                <td><a href="post.html#comments">211</a></td>
+                <td>275,19</td>
+                <td><a class="b-table__remove icon31" title="Удалить пост" href="#"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="b-user">
+                        <div class="b-table__pd">
+                            <a  class="b-table__pd-post" href="post.html">Есть ли смысл на Марсе</a>
+                            <span class="b-table__pd-pstat">Опубликовано 2014-09-09</span>
+                        </div>
+                    </div>
+                </td>
+                <td><a href="post.html#comments">211</a></td>
+                <td>275,19</td>
+                <td><a class="b-table__remove icon31" title="Удалить пост" href="#"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="b-user">
+                        <div class="b-table__pd">
+                            <a  class="b-table__pd-post" href="post.html">Есть ли смысл на Марсе</a>
+                            <span class="b-table__pd-pstat">Опубликовано 2014-09-09</span>
+                        </div>
+                    </div>
+                </td>
+                <td><a href="post.html#comments">211</a></td>
+                <td>275,19</td>
+                <td><a class="b-table__remove icon31" title="Удалить пост" href="#"></a></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="post-preloader">
+            <img src="images/loader.gif" alt="preloader" width="47" height="47"/>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

@@ -1,0 +1,14 @@
+.b-page{
+    padding: em(81) 0;
+    &__title{
+        color: $color_3;
+        $font-size: 35;
+        font-size: em($font-size);
+        padding-bottom: em(37, $font-size);
+    }
+    &__subtitle{
+        $font-size: 25;
+        font-size: em($font-size);
+        padding: em(25, $font-size) 0 em(10, $font-size);
+    }
+}

@@ -1,0 +1,20 @@
+.b-sort{
+    &__item{
+        $font-size: 15;
+        font-size: em($font-size);
+        font-weight: 700;
+        color: $color_3;
+        display: inline-block;
+        border-bottom: 5px solid transparent;
+        transition: border-color .3s;
+        margin-right: em(29, $font-size);
+        text-decoration: none;
+        padding: em(16, $font-size) 0 em(4, $font-size);
+        &.current, &:hover{
+            border-bottom-color: #5d9cec;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}

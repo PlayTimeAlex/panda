@@ -1,0 +1,87 @@
+.b-comments{
+    &__item{
+        padding: em(33) 0 0 em(39);
+        overflow: hidden;
+        background: url(../images/b64/nextcomment_icon.svg) no-repeat 3px 40px;
+    }
+    > .b-comments__item{
+        padding-left: 0;
+        background-image: none;
+    }
+    &__content{
+        padding: 0 0 em(24) 0;
+        border-bottom: 1px solid $color_4;
+        overflow: hidden;
+    }
+    &__avatar{
+        float: left;
+        padding-right: em(18);
+        img{
+            display: block;
+            border-radius:50%;
+        }
+    }
+    &__bottom{
+        padding: em(25) 0 0 0;
+        .left{
+            float: left;
+        }
+        .right{
+            overflow: hidden;
+            text-align: right;
+        }
+    }
+    &__write{
+        padding-top: em(33);
+        .name{
+            color: $color_4;
+            $font-size: 13;
+            font-size: em($font-size);
+        }
+    }
+    &__write &__avatar{
+        padding-right: 0;
+    }
+    &__write &__content{
+        border-bottom: 0;
+        padding-left: em(18);
+    }
+    &__newarea{       
+        background-color: $color_1;
+        border: 1px solid $color_4;
+        position: relative;
+        margin: em(19) 0 0;
+        textarea{
+            font-family: $base__font;
+            $font-size: 13;
+            font-size: em($font-size);
+            color: $color_4;
+            display: block;
+            box-sizing: border-box;
+            margin: 0;
+            width: 100%;
+            background-color: transparent;
+            resize:none;
+            border: none;
+            padding: em(13) em(17);
+            &:focus{
+                outline:none;
+            }
+        }
+        &:before, &:after{
+            content:"";
+            display: block;
+            border-right: 15px solid $color_4;
+            border-bottom: 13px solid transparent;
+            position: absolute;
+            top: -1px;
+            left: -15px;
+        }
+        &:after{
+            border-right: 13px solid $color_1;
+            border-bottom: 10px solid transparent;
+            top: 0;
+            left: -13px;
+        }
+    }
+}

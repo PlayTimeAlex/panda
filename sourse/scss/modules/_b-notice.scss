@@ -1,0 +1,54 @@
+.b-notice{
+    border-top:1px solid #e1e1e1;
+    padding: em(23) em(10) em(25);
+    $font-size: 15;
+    font-size: em($font-size);
+    position: relative;
+    box-sizing: border-box;
+    &:last-of-type{
+        border-bottom:1px solid $color_4;
+    }
+    &_new{
+        background-color: $color_8;
+    }
+    &__avatar{
+        border-radius:50%;
+        float: left;
+    }
+    &__content{
+        padding: em(5) 0 0 em(19);
+        overflow: hidden;
+    }
+    &__time{
+        display: block;
+        color: $color_4;
+        font-size: em(13, $font-size);
+        font-style: italic;
+        background-position: 6px 50%;
+        background-repeat: no-repeat;
+        padding: em(7, $font-size) 0 0 em(39, $font-size);
+        margin-top: em(24, $font-size);
+    }
+    &__header{
+        color: $color_4;
+        line-height: 1.6;
+    }
+    p{
+        color: $color_4;
+        line-height: 1.6;
+    }
+    &_t-comment{
+        p{
+            font-style: italic;
+            font-size: em(13, $font-size);
+            line-height: 1.8;
+        }
+    }
+    &_t-comment &__header{
+        padding: 0 0 em(2, $font-size);
+    }
+    &__postlink{
+        white-space: nowrap;
+        font-weight: 700;
+    }
+}

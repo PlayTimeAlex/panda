@@ -1,0 +1,38 @@
+/*color scheme*/
+$color_1: #fff;
+$color_2: #5d9cec;
+$color_3: #2e2b34;
+$color_4: #80868c;
+$color_5: #ecebe9;
+$color_6: #f2f2f2;
+$color_7: #363636;
+$color_8: #fdfce8;
+
+
+
+$base__font: Arial, Helvetica, sans-serif;
+$base__color: $color_7;
+$base__font-size: 10;
+$base__background: $color_6;
+
+@function em($px, $base: $base__font-size){
+    @return ($px / $base) *1em;
+}
+
+/*grid*/
+$cols: 8;
+$gutter: 1.8367346938776%;
+
+$one_col: (100% - ($gutter * ($cols - 1))) / $cols;
+
+@mixin cols($num) {
+    width: ($one_col * $num) + ($gutter * ($num - 1));
+}
+@mixin offset($num, $first) {
+    @if $first == true{
+        margin-left: ($one_col * $num) + ($gutter * $num);
+        } @else {
+        margin-left: ($one_col * $num) + ($gutter * ($num + 1));
+    }
+    
+}

@@ -1,0 +1,99 @@
+.b-login{
+    padding: em(10) 0 0;
+    &__title{
+        color: $color_3;
+        $font-size: 25;
+        font-size: em($font-size);
+        padding-bottom: em(15, $font-size);
+    }
+    &__text{
+        $font-size: 15;
+        font-size: em($font-size);
+        display: block;
+        width: 100%;
+        border: 1px solid $color_4;
+        background-color: $color_1;
+        box-sizing: border-box;
+        color: $color_4;
+        padding: 0 em(15, $font-size);
+        height: em(49, $font-size);
+        transition: box-shadow .3s, border-color;
+        &.error{
+            border-color: #ff0000;
+        }
+        &::-webkit-input-placeholder {
+            color: lighten($color_4, 20);
+        }
+        &::-moz-placeholder {  /* Firefox 19+ */
+            color: lighten($color_4, 20);
+        }
+        &:-ms-input-placeholder {
+            color: lighten($color_4, 20);
+        }
+        &:focus{
+            box-shadow: 0 0 5px $color_2;
+            border-color: $color_2;
+        }
+    }
+    &__message{
+        color: #ff0000;
+        $font-size: 12;
+        font-size: em($font-size);
+        padding: em(1, $font-size) 0 0;
+        position: absolute;
+        bottom: em(4, $font-size);
+        left: 0;
+    }
+    &__el{
+        padding: 0 0 em(23);
+        position: relative;
+    }
+    &__submit{
+        display: inline-block;
+        border: 0;
+        line-height: 1.5;
+        background-color: $color_2;
+        color: $color_1;
+        $font-size: 15;
+        font-size: em($font-size);
+        cursor: pointer;
+        margin: 0;
+        padding: em(6, $font-size) em(13, $font-size);
+        transition: background-color .3s;
+        &:hover{
+            background-color: darken($color_2, 20);
+        }
+    }
+    &__b-link{
+        color: $color_2;
+        $font-size: 15;
+        font-size: em($font-size);
+        display: inline-block;
+        padding: em(6, $font-size) 0;
+    }
+    &__social-list{
+        text-align: center;
+        > li{
+            display: inline-block;
+            padding: 0 em(3);
+        }
+    }
+    &__social{
+        padding: em(29) 0 0;
+        .title{
+            color: $color_4;
+            $font-size: 20;
+            font-size: em($font-size);
+            text-align: center;
+        }
+    }
+    &__social-icon{
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+    }
+    &__social-list{
+        padding: em(20) 0 0;
+    }
+}

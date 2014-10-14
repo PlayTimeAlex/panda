@@ -1,0 +1,43 @@
+.b-form{
+    &__el{
+        padding-bottom: em(25);
+    }
+    &__label{
+        display: block;
+        color: #363636;
+        $font-size: 15;
+        font-size: em($font-size);
+        padding: em(2, $font-size) 0;
+    }
+    &__text{
+        display: block;
+        color: $color_4;
+        $font-size: 15;
+        font-size: em($font-size);
+        width: 100%;
+        box-sizing: border-box;
+        border:1px solid lighten($color_7, 50);
+        transition:box-shadow .3s, border-color .3s;
+        padding: 0 em(11, $font-size);
+        margin: 0;
+        height: em(29, $font-size);
+        &:focus{
+            outline: none;
+            box-shadow:0 0 4px $color_2;
+            border-color: $color_2;
+        }
+    }
+    &__lcheckbox{
+        color: $color_7;
+        $font-size: 15;
+        font-size: em($font-size);
+        display: block;
+        padding: em(4, $font-size) 0;
+        user-select: none;
+        input{
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 em(18, $font-size) 0 em(12, $font-size);
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <meta charset="UTF-8">
+    <!-- Если у поста нет илюстрции то должна быть данная картинка. Если страница поста и есть илюстрация то использовать ее.
+    В противном случае картинку по умолчанию-->
+    <meta property="og:image" content="http://p125.createme.tk/images/ipc.png" />
+    <!-- Заголовок сайта который придумают позже. На страницах поста долже быть заголовок текущего поста -->
+    <meta property="og:title" content="Китайская панда" />
+    <!-- Описание поста. на остальных страницах описание сайта. -->
+    <meta property="og:description" content="Результат теста: Дракон почти Ваш «конек»! Вы пока не можете преподавать Драконоведение, но на верном пути!" />
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css" media="all"/>
+    <script src="js/01_jquery-2.0.3.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <!--[if lte IE 8 ]><script type="text/javascript">window.location.href="ie8min/index.html";</script><![endif]-->
+</head>
+    <body>
+        <div class="wrap">
+            <header class="b-header">
+                <div class="b-header__top">
+                    <button class="b-header__osidebar js-sidebar-control icon3 close" title="Показать сайдбар"></button>
+                    <a class="b-header__logo" href="index.html" title="На главную"><img src="images/panda-logo.svg" alt="IPanda"/></a>
+                    <div class="b-header__middle">
+                        <div class="row">
+                            <div class="span4">
+                                <div class="b-header__search">
+                                    <form action="/">
+                                        <input class="field" type="text" placeholder="Поиск"/>
+                                        <button class="submit icon1" type="submit" title="Искать"></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <div class="b-header__social">
+                                    <a class="icon icon26" href="#"></a>
+                                    <a class="icon icon27" href="#"></a>
+                                    <a class="icon icon28" href="#"></a>
+                                    <a class="icon icon29" href="#"></a>
+                                    <a class="icon icon30" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-header__right">
+                        <!-- Это для зарегистрированых пользователей-->
+                        <!-- Кнопку наверно нужно скрывать на странице поста -->
+                        <a class="b-header__addpost anim-scroll" href="my_posts.html#new">создать пост</a>
+                        <a class="b-header__notice icon2" href="notice.html">Уведомления<sup>99+</sup></a>
+                        <!-- конец области для зарегистрированых пользователей-->
+                        <!-- это для гостей-->
+                        <!--<a class="b-header__notice icon14" href="notice.html">Войти</a>-->
+                        <!-- конец области для гостей-->
+                    </div>
+                </div>
+                <div class="b-header__bottom">
+                    <div class="container maximized">
+                        <div class="b-sort">
+                            <a class="b-sort__item current" href="index.html">Главная</a>
+                            <a class="b-sort__item" href="index.html">Лучшие</a>
+                            <a class="b-sort__item" href="index.html">Обсуждаемые</a>
+                        </div>
+                    </div>
+                </div>
+            </header>

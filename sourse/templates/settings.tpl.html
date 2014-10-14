@@ -1,0 +1,73 @@
+@@include('blocks/_b-header.html')
+@@include('blocks/_b-sidebar.html')
+<div class="container maximized">
+    <div class="b-page">
+        <h1 class="b-page__title">Настройки профиля</h1>
+        <div class="b-settings">
+            <img class="b-settings__avatar" src="images/content/avatar.jpg" alt="user name" width="87" height="87"/>
+            <form action="/">
+                <div class="b-form">
+                    <div class="b-form__el">
+                        <div class="row">
+                            <div class="span3"><label class="b-form__label">Аватар</label></div>
+                            <div class="span3">
+                                <input class="js-file pr-file" type="file"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form__el">
+                        <div class="row">
+                            <div class="span3"><label class="b-form__label">Логин</label></div>
+                            <div class="span3"><span class="b-settings__login">sergeenko</span></div>
+                        </div>
+                    </div>
+                    <div class="b-form__el">
+                        <div class="row">
+                            <div class="span3"><label class="b-form__label">Новый пароль</label></div>
+                            <div class="span3"><input class="b-form__text" type="password"/></div>
+                        </div>
+                    </div>
+                    <div class="b-form__el">
+                        <div class="row">
+                            <div class="span3"><label class="b-form__label">Новый пароль еще раз</label></div>
+                            <div class="span3"><input class="b-form__text" type="password"/></div>
+                        </div>
+                    </div>
+                    <div class="b-form__el">
+                        <div class="row">
+                            <div class="span3"><label class="b-form__label">Старый пароль</label></div>
+                            <div class="span3"><input class="b-form__text" type="password"/></div>
+                        </div>
+                    </div>
+                    <div class="b-form__el">
+                        <div class="row">
+                            <div class="span3"><label class="b-form__label">Смена емейла</label></div>
+                            <div class="span3"><input class="b-form__text" type="email" value="myemail@email.com"/></div>
+                        </div>
+                    </div>
+                    <div class="b-form__el">
+                        <div class="row">
+                            <div class="span3"><label class="b-form__label">Настройки уведомлений</label></div>
+                            <div class="span3">
+                                <label class="b-form__lcheckbox"><input type="checkbox"/>новые комментарии</label>
+                                <label class="b-form__lcheckbox"><input type="checkbox"/>ответы на комментарии</label>
+                                <label class="b-form__lcheckbox"><input type="checkbox"/>добавили в избранное</label>
+                                <label class="b-form__lcheckbox"><input type="checkbox"/>понравился пост</label>
+                                <label class="b-form__lcheckbox"><input type="checkbox"/>новости iPanda.Club</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-form__el">
+                        <div class="row">
+                            <div class="span3"></div>
+                            <div class="span5">
+                                <button class="pr-button" type="submit">Сохранить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')
