@@ -21,6 +21,16 @@
             border-radius:50%;
         }
     }
+    &__header{
+        padding: 0 em(125) em(27) 0;
+        position: relative;
+        .b-post__rating{
+            top: 0;
+        }
+        .b-post__detalis-i{
+            font-style: normal;
+        }
+    }
     &__bottom{
         padding: em(25) 0 0 0;
         .left{

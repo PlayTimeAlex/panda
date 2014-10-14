@@ -971,6 +971,13 @@ sup {
   .b-comments__avatar img {
     display: block;
     border-radius: 50%; }
+.b-comments__header {
+  padding: 0 12.5em 2.7em 0;
+  position: relative; }
+  .b-comments__header .b-post__rating {
+    top: 0; }
+  .b-comments__header .b-post__detalis-i {
+    font-style: normal; }
 .b-comments__bottom {
   padding: 2.5em 0 0 0; }
   .b-comments__bottom .left {
