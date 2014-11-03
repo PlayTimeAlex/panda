@@ -1,0 +1,19 @@
+.b-text{
+    p{
+        color: $color_7;
+        $font-size: 15;
+        font-size: em($font-size);
+        line-height: 1.6;
+        padding: 0 0 em(24, $font-size);
+        &:last-of-type{
+            padding-bottom: 0;
+        }
+    }
+    &_comment{
+        padding: 0 em(11);
+        p{
+            $font-size: 13;
+            font-size: em($font-size);
+        }
+    }
+}

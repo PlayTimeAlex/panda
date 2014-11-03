@@ -1,0 +1,48 @@
+.b-search{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    text-align: center;
+    padding: em(100) em(68) 0 em(20);
+    box-sizing: border-box;
+    overflow:auto;
+    &__submit{
+        display: inline-block;
+        line-height: 1.5;
+        $font-size: 26;
+        font-size: em($font-size);
+        border: 1px solid $color_4;
+        border-radius: 6px;
+        background-color: transparent;
+        color: $color_4;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: em(7, $font-size) em(42, $font-size);
+        cursor: pointer;
+        transition:background-color .3s, color .3s;
+        margin-top: em(21, $font-size);
+        box-sizing: border-box;
+        text-align: center;
+        width: 100%;
+        &:active{
+            background-color: $color_3;
+            color: $color_1;
+        }
+    }
+    &__text{
+        display: block;
+        margin: 0;
+        color: $color_4;
+        $font-size: 13;
+        font-size: em($font-size);
+        padding: em(15, $font-size) em(13, $font-size);
+        width: 100%;
+        border: 1px solid $color_4;
+        box-sizing: border-box;
+        transition: box-shadow .3s;
+        &:focus{
+            box-shadow: 0 0 5px $color_2;
+        }
+    }
+}

@@ -1,0 +1,165 @@
+@import "modules/base";
+@import "modules/reset";
+@import "modules/grid";
+@import "modules/icons";
+@import "modules/b-text";
+html, body{
+    height: 100%;
+}
+body{
+    min-width: 320px;
+}
+.wrap{
+    width: 100%;
+    overflow: hidden;
+    &__content{
+        min-height: 100%;
+        box-sizing: border-box;
+        min-width: 320px;
+        width: 100%;
+        position: relative;
+        &:before{
+            content:"";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            background-color: rgba(0, 0, 0, .5);
+            opacity: 0;
+            z-index: 50;
+            transition: opacity .3s;
+        }
+        &.show-sidebar, &.show-search{
+            &:before{
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+        }
+    }
+}
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 em(6);
+    transition: padding .3s;
+}
+sup{
+    font-size: 0.75em;
+    vertical-align: top;
+    margin-top: -5px;
+    display: inline-block;
+}
+strong{
+    font-weight: 700;
+}
+em{
+    font-style: italic;
+}
+.align-right{
+    text-align: right;
+}
+.post-preloader{
+    padding-bottom: em(20);
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.pr{
+    &-button, &-file .jq-file__browse{
+        display: inline-block;
+        $font-size: 13;
+        font-size: em($font-size);
+        border: none;
+        background-color: $color_2;
+        line-height: 1.5;
+        color: $color_1;
+        margin: 0 em(7, $font-size) 0 0;
+        padding: em(10, $font-size) em(17, $font-size);
+        cursor: pointer;
+        transition: background-color .3s;
+        border-radius: 4px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            background-color: darken($color_2, 20);
+        }
+        &_dark{
+            background-color: $color_3;
+            &:hover{
+                background-color: darken($color_3, 20);
+            }
+        }
+        &_gray{
+            background-color: $color_4;
+            &:hover{
+                background-color: darken($color_4, 20);
+            }
+        }
+    }
+    &-file_gray .jq-file__browse{
+        background-color: $color_4;
+        &:hover{
+            background-color: darken($color_4, 20);
+        }
+    }
+    &-file.jq-file{
+        vertical-align: top;
+        .jq-file__name{
+            display: inline-block;
+            vertical-align: middle;
+            $font-size: 15;
+            font-size: em($font-size);
+            margin: 0 em(10, $font-size) 0 0;
+            max-width: 150;
+            overflow: hidden;
+        }
+    }
+    &-scroll-top{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        z-index: 50;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    &-video{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        margin-bottom: em(10);
+    }
+    &-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@import "modules/b-header";
+@import "modules/b-footer";
+@import "modules/b-sort";
+@import "modules/b-page";
+@import "modules/b-spoiler";
+@import "modules/b-sidebar";
+@import "modules/b-search";
+@import "modules/b-notice";
+@import "modules/b-table";
+@import "modules/b-user";
+@import "modules/b-login";
+@import "modules/b-social";
+@import "modules/b-post";
+@import "modules/b-comment";

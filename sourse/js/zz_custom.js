@@ -208,6 +208,18 @@ Share = {
                 fileBrowse: 'Добавить изображение'
             });
         });
+
+        $('.b-comments__show-nrati').on('touchstart click', function(){
+            var $parent = $(this).closest('.b-comments__item'),
+                $content = $parent.find('.b-comments__text'),
+                $item = $parent.find('.b-comments__nrati');
+
+            $content.show('fast');
+
+            $item.hide('fast').remove();
+
+            return false;
+        });
     });
 
     $(window).load(function() {

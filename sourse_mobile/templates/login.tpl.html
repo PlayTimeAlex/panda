@@ -1,0 +1,35 @@
+@@include('blocks/_b-header_unlogin.html')
+<div class="container">
+    <div class="b-page">
+        <div class="b-login">
+            <h2 class="b-login__title">Личный кабинет</h2>
+            <div class="b-login__content">
+                <form action="/">
+                    <div class="b-login__el">
+                        <input class="b-login__text" type="text" placeholder="Логин или Ел.почта"/>
+                    </div>
+                    <div class="b-login__el">
+                        <input class="b-login__text" type="password" placeholder="Пароль"/>
+                    </div>
+                    <div class="b-login__el">
+                        <div class="row">
+                            <div class="span4"><a class="b-login__b-link" href="restore.html">Забыли пароль?</a></div>
+                            <div class="span4 align-right"><button class="b-login__submit" type="submit">Войти</button></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="b-login__social">
+                    <div class="title">или войти через соц. сеть</div>
+                    <ul class="b-login__social-list">
+                        <li><a class="b-login__social-icon icon15" href="#" title="Вконтакте"></a></li>
+                        <li><a class="b-login__social-icon icon16" href="#" title="Facebook"></a></li>
+                        <li><a class="b-login__social-icon icon17" href="#" title="Однокласники"></a></li>
+                        <li><a class="b-login__social-icon icon18" href="#" title="Google plus"></a></li>
+                        <li><a class="b-login__social-icon icon19" href="#" title="Mail.ru"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('blocks/_b-footer.html')

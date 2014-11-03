@@ -859,6 +859,9 @@ sup {
     bottom: 0;
     z-index: 30;
     background-color: #f2f2f2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0; }
     .b-post__expand:before {
       content: "";
@@ -1064,6 +1067,14 @@ sup {
     border-bottom: 10px solid transparent;
     top: 0;
     left: -13px; }
+.b-comments__nrati p {
+  font-size: 1.3em;
+  padding: 0.23077em 0;
+  font-style: italic; }
+.b-comments__nrati a {
+  font-style: normal; }
+.b-comments__text.hide {
+  display: none; }
 
 .b-spoiler__header {
   padding-bottom: 2.5em; }

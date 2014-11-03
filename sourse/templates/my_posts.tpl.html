@@ -2,7 +2,9 @@
 @@include('blocks/_b-sidebar.html')
 <div class="container maximized">
     <div class="b-page" id="new">
+        <!--<h1 class="b-page__title">Посты пользователя %username%</h1>-->
         <h1 class="b-page__title">Личный кабинет</h1>
+        <!------ Если смотрим свои посты ------>
         <h2 class="b-page__subtitle">Создать пост</h2>
         <div class="b-cpost">
             <form action="/">
@@ -33,6 +35,11 @@
             </form>
         </div>
         <h2 class="b-page__subtitle">Мои посты</h2>
+        <!------ конец блока ------>
+
+        <!--
+            Колонку "Удалить" видно только когда смотрим свои посты"
+        -->
         <table class="b-table" id="myposts">
             <thead>
             <tr>

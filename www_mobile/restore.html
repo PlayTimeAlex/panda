@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Если у поста нет илюстрции то должна быть данная картинка. Если страница поста и есть илюстрация то использовать ее.
+    В противном случае картинку по умолчанию-->
+    <meta property="og:image" content="http://p125.createme.tk/images/ipc.png" />
+    <!-- Заголовок сайта который придумают позже. На страницах поста долже быть заголовок текущего поста -->
+    <meta property="og:title" content="Китайская панда" />
+    <!-- Описание поста. на остальных страницах описание сайта. -->
+    <meta property="og:description" content="Результат теста: Дракон почти Ваш «конек»! Вы пока не можете преподавать Драконоведение, но на верном пути!" />
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css" media="all"/>
+    <script src="js/01_jquery-2.0.3.min.js"></script>
+    <script src="js/all.min.js"></script>
+</head>
+    <body>
+        <div class="wrap">
+            <div class="wrap__content">
+                <aside class="b-sidebar">
+    <div class="b-sidebar__content">
+        <div class="b-sidebar__item">
+            <span class="b-sidebar__avatar"><img src="images/content/avatar.jpg" alt="Сергеенко Андрей" /><span class="text">Сергеенко Андрей</span></span>
+        </div>
+        <div class="b-sidebar__item">
+            <ul class="b-sidebar__menu">
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l current icon6 anim-scroll" href="my_posts.html#myposts">Мои посты</a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon8" href="favorite.html">Избранное<sup>99+</sup></a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon2" href="notice.html">Уведомления<sup>99+</sup></a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon9" href="login.html">Выйти</a></li>
+            </ul>
+        </div>
+        <div class="b-sidebar__item">
+            <ul class="b-sidebar__menu">
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon13" href="user_raiting.html">Рейтинг пользователей</a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon10" href="faq.html">FAQ</a></li>
+                <li class="b-sidebar__menu-i"><a class="b-sidebar__menu-l icon35" href="#">Полн. версия</a></li>
+                <!-- можно и делать ссылкой свернуть если будут проблемы при програмировании. Просто свернуть это по смылу никакая не ссылка и никуда не ведет.-->
+                <li class="b-sidebar__menu-i"><span class="b-sidebar__menu-l icon11 js-sidebar-control">Свернуть</span></li>
+            </ul>
+        </div>
+    </div>
+</aside>
+                <header class="b-header">
+                    <div class="b-header__top">
+                        <button class="b-header__osidebar js-sidebar-control icon34 close" title="Показать сайдбар"></button>
+                        <a class="b-header__logo" href="index.html" title="На главную"><img src="images/panda-logo.svg" alt="IPanda"/></a>
+                        <button class="b-header__osearch js-search-control icon33 close" title="Поиск"></button>
+                    </div>
+                    <div class="b-header__bottom">
+                        <div class="container">
+                            <div class="b-sort">
+                                <a class="b-sort__item current" href="index.html">Главная</a>
+                                <a class="b-sort__item" href="index.html">Лучшие</a>
+                                <a class="b-sort__item" href="index.html">Обсуждаемые</a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="b-search">
+                    <form action="/">
+                        <input class="b-search__text" type="text" placeholder="Поиск"/>
+                        <button class="b-search__submit" type="submit">найти</button>
+                    </form>
+                    <button class="b-search__submit js-search-control">&larr; Назад</button>
+                </div>
+<div class="container">
+    <div class="b-page">
+        <div class="b-login">
+            <h2 class="b-login__title">Личный кабинет</h2>
+            <div class="b-login__content">
+                <form action="/">
+                    <div class="b-login__el">
+                        <input class="b-login__text" type="text" placeholder="Ел.почта"/>
+                    </div>
+                    <div class="b-login__el">
+                        <button class="b-login__submit" type="submit">Востановить пароль</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                <footer class="b-footer">
+                    <div class="container">
+                        <button class="b-footer__scrooltop icon12"></button>
+                        <p class="b-footer__copyright">&copy; 2014 All Rights Reserved. iPanda.Club</p>
+                        <div class="b-footer__created">Сайт разработан в <a target="_blank" href="//mymediapro.ru" title="Создание сайтов">Mymediapro.ru</a><a
+                                target="_blank" href="//mymediapro.ru"><img src="images/mmp_logo.svg" alt="Создание сайтов" width="33" height="26"  /></a></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

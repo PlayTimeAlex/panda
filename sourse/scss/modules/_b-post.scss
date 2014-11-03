@@ -46,6 +46,7 @@
         bottom: 0;
         z-index: 30;
         background-color: $color_6;
+        box-sizing: border-box;
         margin: 0;
         &:before{
             content:"";
@@ -95,9 +96,6 @@
         vertical-align: middle;
         cursor: pointer;
         margin-left: 18px;
-    }
-    &__detalis{
-
     }
     &__detalis-i{
         display: inline-block;

@@ -1,0 +1,23 @@
+.b-spoiler{
+    padding: em(21) em(14) 0;
+    &__header{
+        padding-bottom: em(25);
+    }
+    &__link{
+        color: $color_2;
+        $font-size: 20;
+        font-size: em($font-size);
+        border-bottom:1px dashed $color_2;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 1.35;
+        cursor: pointer;
+    }
+    &__content{
+        padding-bottom: em(23);
+        display: none;
+    }
+    &.open &__content{
+        display: block;
+    }
+}

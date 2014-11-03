@@ -1,0 +1,68 @@
+.b-notice{
+    border-top:1px solid #e1e1e1;
+    $font-size: 13;
+    padding: em(23, $font-size) em(15, $font-size) em(22, $font-size);
+
+    font-size: em($font-size);
+    position: relative;
+    box-sizing: border-box;
+    &:last-of-type{
+        border-bottom:1px solid $color_4;
+    }
+    &_new{
+        background-color: $color_8;
+    }
+    &__header{
+        color: $color_4;
+        line-height: 1.6;
+        padding: em(4, $font-size) 0 0 em(62, $font-size);
+        position: relative;
+    }
+    &__time{
+        display: block;
+        color: $color_4;
+        font-size: em(13, $font-size);
+        font-style: italic;
+        background-position: 0 50%;
+        background-repeat: no-repeat;
+        padding: em(1, $font-size) 0 em(1, $font-size) em(24, $font-size);
+    }
+    &__avatar{
+        border-radius:50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__reason{
+        padding: em(28, $font-size) 0 0 0;
+    }
+    &__content{
+        padding: em(20, $font-size) 0 0;
+    }
+    &__user{
+        display: block;
+        cursor: pointer;
+        &_system{
+            font-style: italic;
+            color: $color_7;
+            cursor: default;
+        }
+    }
+
+    p{
+        color: $color_7;
+        line-height: 1.6;
+        font-size: em(15, $font-size);
+    }
+    &_t-comment &__content{
+        p {
+            font-style: italic;
+            font-size: em(15, $font-size);
+            line-height: 1.8;
+        }
+    }
+    &__postlink{
+        white-space: nowrap;
+        font-weight: 700;
+    }
+}

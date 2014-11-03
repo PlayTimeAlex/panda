@@ -94,4 +94,20 @@
             left: -13px;
         }
     }
+    &__nrati{
+        p{
+            $font-size: 13;
+            font-size: em($font-size);
+            padding: em(3, $font-size) 0;
+            font-style: italic;
+        }
+        a{
+            font-style: normal;
+        }
+    }
+    &__text{
+        &.hide{
+            display: none;
+        }
+    }
 }

@@ -1,0 +1,35 @@
+.b-user{
+    font-size: $base__font-size*1px;
+    font-weight: normal;
+    &__avatar{
+        border-radius:50%;
+        float: left;
+    }
+    &__content{
+        overflow: hidden;
+        padding: 0 0 0 em(13);
+    }
+    &__name{
+        $font-size: 13;
+        font-size: em($font-size);
+        display: block;
+        padding: em(2, $font-size) 0 0;
+    }
+    &__regdate{
+        $font-size: 13;
+        font-size: em($font-size);
+        display: block;
+        font-style: italic;
+        color: $color_4;
+        padding: em(4, $font-size) 0 0 em(25, $font-size);
+        background-repeat: no-repeat;
+        background-position: left 50%;
+    }
+    &__rating{
+        font-weight: normal;
+        font-style: italic;
+        padding:3px 0 3px 27px;
+        background-repeat: no-repeat;
+        background-position: left 50%;
+    }
+}

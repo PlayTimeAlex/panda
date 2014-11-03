@@ -1,0 +1,15 @@
+.b-social{
+    &__icon{
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border:none;
+        background-color: transparent;
+        margin: 0;
+        cursor: pointer;
+        vertical-align: middle;
+        margin: 0 0 15px 10px;
+    }
+}

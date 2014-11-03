@@ -1,0 +1,43 @@
+.b-header{
+    &__top{
+        position: relative;
+        background-color: $color_3;
+        padding: em(9) em(48);
+        z-index: 100;
+    }
+    &__osidebar, &__osearch{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background-color: #81868c;
+        height: 100%;
+        width: em(48);
+        background-color: $color_4;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        font-size: $base__font-size*1px;
+        transition: background-color .3s;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        cursor: pointer;
+        &:active{
+            background-color: darken($color_4, 20);
+        }
+    }
+    &__osearch{
+        left: auto;
+        right: 0;
+    }
+    &__logo{
+        display: block;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__bottom{
+        background-color: #ffffff;
+    }
+}
